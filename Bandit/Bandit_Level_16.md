@@ -17,4 +17,33 @@ we can now try both of these ports using the same method as we did in level 15 u
 Apon testing both the port 31790 is the correct one and when given the correct password we are given a private key:  
 ![4f0f31cb.png](../src/4f0f31cb.png)  
   
-Which we can now use to login to the next level  
+Which we can now use to login to the next level and cat out the password file however apon running the previous command with our new keyfile we have created we get the error:  
+![1f52df13.png](../src/1f52df13.png)  
+  
+To fix this we need to edit the permission of our keyfile  
+To do this we use the chmod command which changes file permissions  
+  
+A private key should have permissions of owner read only  
+  
+Permission in linux are:  
+- read  
+- write  
+- execute  
+  
+and they are equivalent to different numbers  
+- read: 4  
+- write: 2  
+- execute: 1  
+  
+that can be added together to give correct permisisions for the three types of permision groups:  
+- owner  
+- group  
+- all users  
+  
+in our case we only want owner to be read only so our 3 digit string becomes:  
+> 400  
+  
+More on linux file permissions can be found here: [Understanding Linux File Permissions - Linux.com](https://www.linux.com/tutorials/understanding-linux-file-permissions/)  
+  
+Once we run the command chmod 400 bandit17.key we can now ssh into the next machine and cat out the password giving us the password as: xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn  
+  
