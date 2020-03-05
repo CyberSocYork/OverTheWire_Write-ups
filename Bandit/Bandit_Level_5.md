@@ -16,5 +16,3 @@ After running this it returns one file that is openable
 ![99cb8038.png](../src/99cb8038.png)  
   
 After opening this file we get the password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7  
-  
-  

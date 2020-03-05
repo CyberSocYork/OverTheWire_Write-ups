@@ -1,0 +1,60 @@
+createdAt: "2020-03-05T23:36:12.511Z"
+updatedAt: "2020-03-05T23:40:37.606Z"
+type: "MARKDOWN_NOTE"
+folder: "48478762976c01986a6c"
+title: "Bandit Level 16"
+tags: []
+content: '''
+  # Bandit Level 16
+  
+  In this level we need to scan a range of ports to tell which of them has a server running on
+  This is called port scanning and is a common security technique
+  
+  The most common tool for this is "nmap" and can be used with the "-p" to specify port ranges with the format
+  > nmap -p \\<start_port>-\\<end_port> localhost
+  
+  This makes our final command: 
+  > nmap -p 31000-32000 localhost
+  
+  which apon running returns:
+  ![d4ff2223.png](:storage/Bandit_Level_16/d4ff2223.png)
+  
+  we can now try both of these ports using the same method as we did in level 15 using openssl
+  
+  Apon testing both the port 31790 is the correct one and when given the correct password we are given a private key:
+  ![4f0f31cb.png](:storage/Bandit_Level_16/4f0f31cb.png)
+  
+  Which we can now use to login to the next level and cat out the password file however apon running the previous command with our new keyfile we have created we get the error:
+  ![1f52df13.png](:storage/Bandit_Level_16/1f52df13.png)
+  
+  To fix this we need to edit the permission of our keyfile
+  To do this we use the chmod command which changes file permissions
+  
+  A private key should have permissions of owner read only
+  
+  Permission in linux are:
+  - read
+  - write
+  - execute
+  
+  and they are equivalent to different numbers
+  - read: 4
+  - write: 2
+  - execute: 1
+  
+  that can be added together to give correct permisisions for the three types of permision groups:
+  - owner
+  - group
+  - all users
+  
+  in our case we only want owner to be read only so our 3 digit string becomes:
+  > 400
+  
+  More on linux file permissions can be found here: [Understanding Linux File Permissions - Linux.com](https://www.linux.com/tutorials/understanding-linux-file-permissions/)
+  
+  Once we run the command chmod 400 bandit17.key we can now ssh into the next machine and cat out the password giving us the password as: xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

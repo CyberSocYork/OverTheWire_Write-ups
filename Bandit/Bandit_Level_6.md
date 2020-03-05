@@ -18,4 +18,3 @@ There is one file in this list that catches my eye being:
 "/var/lib/dpkg/info/bandit7.password"  
   
 After opening this file we get the password: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs  
-  

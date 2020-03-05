@@ -12,4 +12,5 @@ In our case the word we want to look for is millionth so we can use the command:
   
 After we run this command we get the output  
 ![221d9eee.png](../src/221d9eee.png)  
+  
 Giving us the password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV  

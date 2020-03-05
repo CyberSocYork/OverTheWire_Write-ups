@@ -1,0 +1,26 @@
+createdAt: "2020-03-05T23:36:12.509Z"
+updatedAt: "2020-03-05T23:39:52.296Z"
+type: "MARKDOWN_NOTE"
+folder: "48478762976c01986a6c"
+title: "Bandit Level 9"
+tags: []
+content: '''
+  # Bandit Level 9
+  
+  In this level the password is stored in the file data.txt in one of the only human readble strings beginning with several = characters
+  
+  To do this we will use the strings command.
+  This command returns all human readble strings in a file.
+  
+  To narrow down the output even more we can pipe the output of this command into the grep command searching for "=="
+  The command will look like this:
+  > strings data.txt | grep "=="
+  
+  Once the command runs we get the output:
+  ![0edcbfab.png](:storage/Bandit_Level_9/0edcbfab.png)
+  
+  As we can see the password is: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
