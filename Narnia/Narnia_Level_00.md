@@ -1,4 +1,4 @@
-# Narnia Level 1  
+# Narnia Level 0  
   
 In this level we have a binary narnia0 that runs suid as narnia1 and the source code  
   
