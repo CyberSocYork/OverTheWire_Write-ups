@@ -14,6 +14,8 @@ This allows us to check all of our files in one command as they follow a format 
 > `file ./-file0*`
 
 This command returns this:
+
 ![fca04285.png](../src/fca04285.png)
+
 As we can see there is one file that is made up of ASCII text
 When it is opened it shows us the password: `koReBOKuIDDepwhWk7jZC0RTdopnAYKh`
