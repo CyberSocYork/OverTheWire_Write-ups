@@ -19,6 +19,6 @@ for i in {0000..9999}
 ```
 
 we can now use the command:
-> cat list.txt | nc localhost 30002
+> `cat list.txt | nc localhost 30002`
 
-And after this churns its way through passwords it find the password is: uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+And after this churns its way through passwords it find the password is: `uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG`

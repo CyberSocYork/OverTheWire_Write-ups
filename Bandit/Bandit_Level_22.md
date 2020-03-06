@@ -1,6 +1,6 @@
 # Bandit Level 22
 
-This time we have another program that runs at regular intervals so we check inside the /etc/cron.d direcroy again this time using the file cronjob_bandit23
+This time we have another program that runs at regular intervals so we check inside the `/etc/cron.d` direcroy again this time using the file `cronjob_bandit23`
 
 When we run the script we get the debug message:
 ![2985e3a6.png](../src/2985e3a6.png)
@@ -27,4 +27,4 @@ As we know we want to look at bandit23's password we can rn the function it uses
 This would look like this:
 ![c9777bbb.png](../src/c9777bbb.png)
 
-We can now look inside the file at "/tmp/8ca319486bfbbc3663ea0fbe81326349" which gives us the password: jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+We can now look inside the file at `/tmp/8ca319486bfbbc3663ea0fbe81326349` which gives us the password: `jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n`

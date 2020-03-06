@@ -1,8 +1,8 @@
 # Bandit Level 25
 
-In this level we are told that we have another shell other than /bin/bash however on login to this shell we are given the welcome screen and then immidiatly logged out
+In this level we are told that we have another shell other than `/bin/bash` however on login to this shell we are given the welcome screen and then immidiatly logged out
 
-If we look in /etc/passwd we can find what shell the user is running by
+If we look in `/etc/passwd` we can find what shell the user is running by
 
 The passwd file shows:
 ![3ea78199.png](../src/3ea78199.png)
@@ -20,9 +20,9 @@ After re-logging in with a small window we are greeted with this:
 ![a115052d.png](../src/a115052d.png)
 
 We can now press v to allow us to start typing commands and use the command
-> :e /etc/bandit_pass/bandit26
+> `:e /etc/bandit_pass/bandit26`
 
 As this command will open another file in our editor
 
-After running this command we get the password: 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+After running this command we get the password: `5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z`
 
