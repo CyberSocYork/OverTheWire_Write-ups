@@ -1,0 +1,39 @@
+createdAt: "2020-03-06T01:43:19.567Z"
+updatedAt: "2020-03-06T01:53:41.047Z"
+type: "MARKDOWN_NOTE"
+folder: "48478762976c01986a6c"
+title: "Bandit Level 29"
+tags: []
+content: '''
+  # Bandit Level 29
+  
+  This level is another git repo one so after cloning the repo same as the last few we look inside the README and find:
+  ![06e46103.png](:storage/7e67104c-606e-4742-b6f8-2e769a925ca4/06e46103.png)
+  
+  This tells me a quick hint, the fact it says in production gives me a hint there are other branches 
+  
+  The command git show-branch is used to show branches and with the "-a" argument can show all possible branches
+  
+  Once I run this command I get the output:
+  ![d1a717fb.png](:storage/7e67104c-606e-4742-b6f8-2e769a925ca4/d1a717fb.png)
+  
+  Here I can see there are 3 branches:
+  - master
+  - dev
+  - sploits-dev
+  
+  I can now change my branch with the git checkout command from before but this time place the name of the branch I wish to be on
+  After running the command:
+  > git checkout dev
+  
+  I get the output:
+  ![ccd3d283.png](:storage/7e67104c-606e-4742-b6f8-2e769a925ca4/ccd3d283.png)
+  
+  I can now open the README and am greeted with:
+  ![b1ad4a8d.png](:storage/7e67104c-606e-4742-b6f8-2e769a925ca4/b1ad4a8d.png)
+  
+  This tells me the password is: 5b90576bedb2cc04c86a9e924ce42faf 
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
