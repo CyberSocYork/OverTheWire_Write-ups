@@ -2,21 +2,11 @@
 
 The goal of this level is to login to the game using ssh.
 
-The standard syntax for ssh is:
-> `ssh user@domain -p port`
+The standard syntax for ssh is `ssh user@domain -p port`.  We can log in to the server using the username `bandit0` and port `2220`.
 
-so using the username bandit0 and port given 2220 we can log into the server
+After we connect to the server, we need to see which files are in the folder. To do this we use the `ls` command, which will list all files and directories in the current directory.
 
-Once we enter the server we need to see which files are in the folder
-To do this we use the ls command which will list all files and directories in the current directory
-Once we run the command
-> `ls`
-
-We get output showing us there is a file called readme
-
-We now need to open the file readme
-For this we can use the command cat which is short for "concatenation"
-This command can be used to open files and so if we use the command:
+Once we run the command `ls`, we get output showing us there is a file called `readme`. We now need to open the file `readme`. For this we can use the command `cat` which is short for "concatenate", and can be used to print files to the terminal.
 > `cat readme`
 
-The command returns the password: `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`
+The command reveals the password: `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`

@@ -1,10 +1,8 @@
 # Bandit Level 1
 
-THe password for the nert file is located in a file called `-` located in the home directory
+The password for the next level is located in a file called `-` located in the home directory.
 
-When first attempting to open the file due to the name being `-` linux interprets this as part of the command and proceeds to just run the usual cat command
-
-To mitigate this use specify that it is a file in this directory by using `./` making the command
+Due to the fact that the filename is `-`, the `cat` command interprets this as an argument, and doesn't do what we expect.  To mitigate this, we have to specify that it is a file in this directory by prepending `./` to the filename.
 > `cat ./-`
 
-This works opening the file successfully giving the password: `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`
+This works, opening the file successfully, revealing the password: `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`
