@@ -1,18 +1,17 @@
 # Bandit Level 21
 
-For this level we are told to look at a program that is running at regular intervals and that liiking in `/etc/cron.d` could help
+For this level we are told to look at a program that is running at regular intervals and that looking in `/etc/cron.d` might help.
 
-Well apon inspection of cron.d we are greeted with 3 useful cronjobs:
+When we look at the contents of `/etc/cron.d` we can see 4 crondjobs. Three of these are of interest.
+
 ![0ec1d8ef.png](../src/0ec1d8ef.png)
 
-if we look at the contents of  `cronjob_bandit22` we see this:
+Looking at the contents of `cronjob_bandit22` shows us this:
+
 ![463e0a99.png](../src/463e0a99.png)
 
-It is clearly running a program named `/usr/bin/cronjob_bandit22.sh`
+This cronjob runs a program located at `/usr/bin/cronjob_bandit22.sh`. Running this ourselves gives us the following output.
 
-After running this command we are given the output:
 ![08b9b26f.png](../src/08b9b26f.png)
 
-From this we can see the program is trying to access a file named `/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`
-
-If we look at the contents of this file we are greeted with a single string being the password: `Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI`
+We can see the program is trying to access a file named `/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`. Looking at the contents of this file reveals the password: `Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI`

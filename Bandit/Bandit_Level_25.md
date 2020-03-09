@@ -1,28 +1,28 @@
 # Bandit Level 25
 
-In this level we are told that we have another shell other than `/bin/bash` however on login to this shell we are given the welcome screen and then immidiatly logged out
+In this level we are given a private ssh key and told to login to `bandit26`. We are also told that the shell for `bandit26` is not `/bin/bash`.
 
-If we look in `/etc/passwd` we can find what shell the user is running by
+This shell prints ascii-art of the word `bandit26` and then exits.
 
-The passwd file shows:
+Using out shell on the user `bandit25` we can read the `/etc/passwd` file, which is where user's custom shells are stored.
+
 ![3ea78199.png](../src/3ea78199.png)
 
-Now we can look at what the shell they are running is:
-![edc1d643.png](../src/edc1d643.png)
+Reading `/usr/bin/showtext` might help.
+```sh
+#!/bin/sh
 
-This shows us it is using more to show text.txt and then exiting the shell
+export TERM=linux
 
-The way to stop us being immidiatly booted out of this shell is by leveraging the more command
+more ~/text.txt
+exit 0
+```
+Reading this script, we can tell that it displays some text using the `more` command before exiting. The `more` command is used to make a large amount of text pageable (scrollable) if the screen is not big enough to display it. If we reduce the size of the screen enough so that `more` pages the text we will not be instantly kicked out.
 
-more uses vi to show the message and if we make the window small enough we will be able to open vim as more tries to allow us to scroll
-
-After re-logging in with a small window we are greeted with this:
 ![a115052d.png](../src/a115052d.png)
 
-We can now press v to allow us to start typing commands and use the command
-> `:e /etc/bandit_pass/bandit26`
+We can have `more` copy the text into vim for us by pressing `v`. As we are now in vim we can open the password file.
+> `:edit /etc/bandit_pass/bandit26`
 
-As this command will open another file in our editor
-
-After running this command we get the password: `5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z`
+This reveals the password: `5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z`
 

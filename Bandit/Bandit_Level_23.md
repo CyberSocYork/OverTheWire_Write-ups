@@ -1,8 +1,9 @@
 # Bandit Level 23
 
-Again this is another cronjob challenge so we will navigate to the `/etc/cron.d` directory and look at the `cronjob_bandit24` file
 
-We can again inspect the `.sh` file to give the shellcode:
+This time we have another program that runs at regular intervals, and are again told that looking in `/etc/cron.d`.
+
+Looking at the cronjob `cronjob_bandit24`, it runs a script at `/usr/bin/cronjob_bandit23.sh`. This shell script is as follows:
 ```sh
 #!/bin/bash
 
@@ -20,29 +21,18 @@ do
     fi
 done
 ```
-
-here we see that it is running all code in `/var/spool/$bandit24` every minite or so
-
-first of all we need to write our own shellscript
-It goes as follows:
+We can see that this script runs all code in `/var/spool/bandit24` every minute. To exploit this we must write our own shell script to find us the password.
 ```sh
 #!/bin/bash
 
 cat /etc/bandit_pass/bandit24 > /tmp/thisdirisours/passwd
 ```
+We need to mark this script as executable so it can be run by the cronjob. We can do this with `chmod`.
+> `chmod a+x <filename>`
 
-after writing this in our tmp directory with the extension .sh we need to set permissions for the file
-We want everone to do everything so we can use the command
-> `chmod 777 ourshellcode.sh`
+We also need to create a file to receive the password, and give it the correct permissions. We create the file with `touch` and change the permissions with `chmod`.
+> `touch passwd && chmod a=wr passwd`
 
-Now we create the file we said to pipe redirect the output of the command to in our shellcode using `touch passwd` which will create our password file
-
-We also need to set the correct permissions on this one also as we need all users to be able to write to it so we use the command:
-> `chmod 666 passwd`
-
-allowing all users to read and write to it
-
-Now we just copy our shellscript into `/var/spool/bandit24` and wait
-
-After a certain amount of time you should see our password file now has data in and when opened with the `cat` command we see the password is: `UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ`
+Now we copy our script into `/var/spool/bandit24` and wait. Once the cronjob occurs and runs our script, there will be text in the `passwd` file.
+Opening this file reveals the password: `UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ`
 

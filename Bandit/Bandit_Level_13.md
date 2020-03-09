@@ -1,17 +1,14 @@
 # Bandit Level 13
-In this level we are told we need to login to the next level using an ssh private key
+In this level we need to login to the next level using a private ssh key.
 
-When we look what is inside the home directory we find a private key:
+When we look at the file `sshkey.private` in the home directory, we see that it contains the ssh key for the next level.
+
 ![546df4b1.png](../src/546df4b1.png)
 
-The basis of the command command to get into the next level is:
+We attempt to connect to `localhost` (the same PC that we're already on) with the user `bandit14`.
 > `ssh bandit14@localhost`
 
-However if we run this we will be asked for a password so instead we need to find the way to use this private key instead of a password
-
-If we look at the help page of `ssh` we can see that `-i` allows us to use an identiy file
-
-This makes our command:
+When we run this we are asked for a password, which we do not have. To specify a key to use we use the flag `-i`.
 > `ssh -i sshkey.private bandit14@localhost`
 
-After running this command we are logged into bandit14 we are able cat open the password which is: `4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e`
+This command works, and we are now logged in as bandit14. Opening `/etc/bandit_pass/bandit14` reveals the password: `4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e`
