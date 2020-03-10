@@ -1,29 +1,21 @@
 # Bandit Level 32
 
-In this level we do not get much of a hint as to what to do
+In this level we do not get much of a hint; we are merely told that it is another escape challenge.
 
-Apon sshing into the shell we recive the message `WELCOME TO THE UPPERCASE SHELL`
+When we connect to the level, we get the message `WELCOME TO THE UPPERCASE SHELL`
 
-As we start to type commands we realise that all of the command we typing are being converted to upper case and not being recognised:
+As we start to run commands, we can see that the shell is not interpreting them properly. It is converting them to uppercase before parsing them.
+
 ![58e67432.png](../src/58e67432.png)
 
-All linux commands need lowercase letters the only exception being some environment vairables
-
-Environment variables are used to have as shortcuts for other things to make them more easy to use
-Some common ones include:
+Unlike Windows, Linux systems are case-sensitive. Due to the fact that most linux commands are lowercase, we can't run any commands. One of the few things that are uppercase are environment variables. These are used to communicate system information (such as the shell used or the location of binaries) to programs. Some common ones include:
 - `$SHELL`
-- `$HOME`
+- `$PATH`
 - `$USER`
 
-as you can see we can use all of these however nonoe of these are much use without other linux commands:
+These expand to their contents, so if they point to a binary we are able to use that binary.
+
 ![9a4e9098.png](../src/9a4e9098.png)
 
-One other option is to look for other commands or environment variables that dont contain letters
-
-One common one that is pre-installed in some linux systems is `$0` which is short for the system default shell
-
-When we run this command we are luckily greeted with something that is not an error but instead an as shell we can now use to cat open the `/etc/bandit_pass/bandit32` password file:
-![dc02e95f.png](../src/dc02e95f.png)
-
-Giving us the password: `c9c3199ddf4121b10cf581a98d51caee`
+There is one environment variable that is present on some (but not all) Linux systems that points to the system backup shell. Running `$0` as a command gives us a `/bin/sh` session. Using this shell we can open the password file `/etc/bandit_pass/bandit33`, revealing the password: `c9c3199ddf4121b10cf581a98d51caee`
 
