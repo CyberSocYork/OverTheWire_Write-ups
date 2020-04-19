@@ -44,11 +44,11 @@ The shellcode we need is to run `/bin/sh` allowing us to gain a shell as narnia2
 
 We now need to place this into the environment variable EGG. To do this we can use the export command again however after completing this we are returned this error:
 
-![image-20200419014641946](/home/joe/Documents/OverTheWireStuff/OverTheWire_Write-ups/src/image-20200419014641946.png)
+![image-20200419014641946](../src/image-20200419014641946.png)
 
 This is because even though we have placed the shellcode into the environment variable it is still classed as a string of ASCII characters not the actual shellcode itself.  We can see this by using the `env` command which shows us the variables in the environment. Here we see the value of `EGG` alongside the other environment variables:
 
-![image-20200419015216798](/home/joe/Documents/OverTheWireStuff/OverTheWire_Write-ups/src/image-20200419015216798.png)
+![image-20200419015216798](../src/image-20200419015216798.png)
 
 To change this from just being a string we need to find something that can print our shellcode into its executable format. To do this we can use python.
 
@@ -59,10 +59,10 @@ The new command becomes:
 
 After this command is run we can see that the value of `EGG` in the environment has changed to:
 
-![image-20200419015541563](/home/joe/Documents/OverTheWireStuff/OverTheWire_Write-ups/src/image-20200419015541563.png)
+![image-20200419015541563](../src/image-20200419015541563.png)
 
 Now when we execute the program narnia1 we get the output:
 
-![image-20200419015757431](/home/joe/Documents/OverTheWireStuff/OverTheWire_Write-ups/src/image-20200419015757431.png)
+![image-20200419015757431](../src/image-20200419015757431.png)
 
 Which gives us a shell where we are the user narnia2 and we can see that the password is: `nairiepecu`
