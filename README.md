@@ -2,7 +2,8 @@
  
 ## Bandit  
 
-###  - [Bandit_Level_00](./Bandit/Bandit_Level_00.md) 
+###
+- [Bandit_Level_00](./Bandit/Bandit_Level_00.md) 
 - [Bandit_Level_01](./Bandit/Bandit_Level_01.md) 
 - [Bandit_Level_02](./Bandit/Bandit_Level_02.md) 
 - [Bandit_Level_03](./Bandit/Bandit_Level_03.md) 
