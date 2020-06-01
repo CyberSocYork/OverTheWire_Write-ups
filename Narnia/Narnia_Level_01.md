@@ -31,7 +31,7 @@ To create an environment variable we use the command `export=“value in environ
 
 If we attempt to place some raw commands into our environment variable we are returned this error:
 
-![image-20200419013307607](/home/joe/Documents/OverTheWireStuff/OverTheWire_Write-ups/src/image-20200419013307607.png)
+![image-20200419013307607](../src/image-20200419013307607.png)
 
 This shows us that the program is unable to execute this as a function. This is because what is returned from the `getenv` function is just the string we placed into our environment variable
 
