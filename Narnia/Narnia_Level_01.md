@@ -52,7 +52,7 @@ This is because even though we have placed the shellcode into the environment va
 
 To change this from just being a string we need to find something that can print our shellcode into its executable format. To do this we can use python.
 
-Python can be used to print our shellcode into the environment variable which makes it executable.
+Python can be used to print our shellcode into the environment variable which will make it executable.
 
 The new command becomes:
  `export EGG=$(python -c ‘print “\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80"')`
