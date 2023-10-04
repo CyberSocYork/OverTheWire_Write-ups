@@ -9,4 +9,4 @@ After we run this command we get the output
 
 ![221d9eee.png](../src/221d9eee.png)
 
-This reveals the password: `cvX2JJa4CFALtqS87jk27qwqGhBM9plV`
+This reveals the password: `TESKZC0XvTetK0S9xNwm25STk5iWrBvP`

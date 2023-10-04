@@ -10,4 +10,4 @@ Executing the binary with no arguments, as we are instructed to do, gives us thi
 
 ![b6916d3b.png](../src/b6916d3b.png)
 
-This program runs any command we give it as the user `bandit20`. We can therefore use it to open `/etc/bandit_pass/bandit20`, which reveals the password: `GbKksEFF4yrVs6il55v6gwY5aVje5f0j`
+This program runs any command we give it as the user `bandit20`. We can therefore use it to open `/etc/bandit_pass/bandit20`, which reveals the password: `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`

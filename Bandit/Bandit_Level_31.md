@@ -1,6 +1,6 @@
 # Bandit Level 31
 
-In this level we are asked to clone a git repo to find the password.
+In this level we are asked to clone a git repo with `git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo` to find the password.
 
 Looking at the `README` file we are given the following hint:
 
@@ -20,4 +20,4 @@ We can supply any commit message as the task only checks the file. We now need t
 
 ![1f17e188.png](../src/1f17e188.png)
 
-This response contains the password: `56a9bf19c63d650ce78e6ec0354ee45e`
+This response contains the password: `rmCBvG56y58BXzv98yZGdO7ATVL5dW8y`

@@ -15,8 +15,8 @@ The next level down is another gzip file, and inside that there is a `.tar` arch
 > `cat data.txt | xxd -r | gunzip | bunzip2 | gunzip | tar xO | file -`
 
 Inside that we have another tar archive, then another bzip2 file, then another tar archive. Inside that is gzip data and then finally we have ASCII text.
-> `cat data.txt | xxd -r | gunzip | bunzip2 | gunzip | tar xO | tar xO | bunzip2 | gunzip | file -`
+> `cat data.txt | xxd -r | gunzip | bunzip2 | gunzip | tar -xO | tar -xO | bunzip2 | tar -xO | gunzip | file -`
 
 ![bandit12-ascii.png](../src/bandit12-ascii.png)
 
-Removing the `| file -` reveals the password: `8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL`
+Removing the `| file -` reveals the password: `wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw`

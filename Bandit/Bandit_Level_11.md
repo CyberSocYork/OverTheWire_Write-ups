@@ -8,4 +8,4 @@ To decode the ceaser cipher we need to use the command `tr`. This is a command t
 We need to shift both uppercase and lowercase characters. Our original characters are `A-Za-z`, because we have both uppercase and lowercase letters. Shift by 13 gives us the pattern `N-ZA-Mn-za-m`. So `A` maps to `N`, `B` to `O` etc.
 > `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'`
 
-This command reveals the password: `5Te8Y4drgCRfCx8ugdwuEX8KFCw6k2EUu`
+This command reveals the password: `JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv`

@@ -9,4 +9,4 @@ After we connect to the server, we need to see which files are in the folder. To
 Once we run the command `ls`, we get output showing us there is a file called `readme`. We now need to open the file `readme`. For this we can use the command `cat` which is short for "concatenate", and can be used to print files to the terminal.
 > `cat readme`
 
-The command reveals the password: `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`
+The command reveals the password: `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`

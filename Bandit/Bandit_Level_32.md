@@ -18,4 +18,4 @@ These expand to their contents, so if they point to a binary we are able to use 
 
 ![9a4e9098.png](../src/9a4e9098.png)
 
-There is one environment variable that is present on some (but not all) Linux systems that points to the system backup shell. Running `$0` as a command gives us a `/bin/sh` session. Using this shell we can open the password file `/etc/bandit_pass/bandit33`, revealing the password: `c9c3199ddf4121b10cf581a98d51caee`
+There is one environment variable that is present on some (but not all) Linux systems that points to the system backup shell. Running `$0` as a command gives us a `/bin/sh` session. Using this shell we can open the password file `/etc/bandit_pass/bandit33`, revealing the password: `odHo63fHiFqcWWJG9rLiLDtPm45KzUKy`

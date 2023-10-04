@@ -11,4 +11,4 @@ Once we enter the `inhere` directory, we use `ls` to list the files and no files
 
 Once we run this command we suddenly see the file `.hidden`.
 
-Opening this file reveals the password: `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`.
+Opening this file reveals the password: `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`.

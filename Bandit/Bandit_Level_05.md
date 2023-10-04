@@ -13,4 +13,4 @@ After running this it returns one file.
 
 ![99cb8038.png](../src/99cb8038.png)
 
-Opening this file reveals the password: `DXjZPULLxYr17uwoI01bNLQbtFemEgo7`
+Opening this file reveals the password: `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`

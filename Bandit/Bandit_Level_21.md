@@ -14,4 +14,4 @@ This cronjob runs a program located at `/usr/bin/cronjob_bandit22.sh`. Running t
 
 ![08b9b26f.png](../src/08b9b26f.png)
 
-We can see the program is trying to access a file named `/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`. Looking at the contents of this file reveals the password: `Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI`
+We can see the program is trying to access a file named `/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`. Looking at the contents of this file reveals the password: `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`

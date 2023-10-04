@@ -2,7 +2,7 @@
 
 In this level we are asked to clone a git repo to find the password.
 
-First, we clone the repo with `git clone`. Looking in the `README` file we see that the password has been redacted:
+First, we clone the repo with `git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo`. Looking in the `README` file we see that the password has been redacted:
 
 ![bfe3fdc6.png](../src/bfe3fdc6.png)
 
@@ -11,6 +11,6 @@ This means that we need to find an older version of this file with the password 
 ![3df79b43.png](../src/3df79b43.png)
 
 As we can see there is a commit with the message "fix info leak". If we look at the file before this commit was made, it may contain the password. We can look at the state of a repo at a certain commit using the command `git checkout`.
-> `git checkout 186a1038cc54d1358d42d468cdc8e3cc28a93fcb`
+> `git checkout abcff758fa6343a0d002a1c0add1ad8c71b88534`
 
-Now, if we look at the `README` file we see the password: `bbc96594b4e001778eee9975372716b2`
+Now, if we look at the `README` file we see the password: `tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S`

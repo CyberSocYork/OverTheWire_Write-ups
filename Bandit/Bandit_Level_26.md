@@ -12,4 +12,4 @@ This means that when we run `:shell` it will run bash, giving us what we want.
 Looking in the home directory we have a suid binary, similar to [level 19](Bandit_Level_19.md).
 > `./bandit27-do cat /etc/bandit_pass/bandit27`
 
-This reveals the password: `3ba3118a22e93127a4ed485be72ef5ea`
+This reveals the password: `YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS`

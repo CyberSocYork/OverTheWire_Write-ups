@@ -7,4 +7,4 @@ For this we can use the `diff` command, which lists the differences between two 
 
 ![61ddd1ba.png](../src/61ddd1ba.png)
 
-The output is the line that has changed. The top is the original and the bottom is the change. The bottom one is the password: `kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd`
+The output is the line that has changed. The top is the original and the bottom is the change. The bottom one is the password: `hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg`

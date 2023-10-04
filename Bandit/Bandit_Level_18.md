@@ -13,4 +13,4 @@ This command gives us a shell!
 
 This shell looks slightly different to bash, and lacks a few features, but for our purposes it will work fine.
 
-Opening the `readme` file reveals the password: `IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x`
+Opening the `readme` file reveals the password: `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`

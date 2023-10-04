@@ -7,4 +7,4 @@ When trying to use the standard `cat` command `cat spaces in this filename`, it 
 To work around this we place quote marks around the filename to force the `cat` command to treat it as one filename.
 > `cat "spaces in this filename"`
 
-This reveals the password: `UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK`
+This reveals the password: `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`

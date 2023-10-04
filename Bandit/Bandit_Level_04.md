@@ -14,4 +14,4 @@ That command returns this:
 
 As we can see there is one file that is made up of ASCII text.
 
-Opening this file reveals the password: `koReBOKuIDDepwhWk7jZC0RTdopnAYKh`
+Opening this file reveals the password: `lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR`

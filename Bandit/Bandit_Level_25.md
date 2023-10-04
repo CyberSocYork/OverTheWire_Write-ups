@@ -2,6 +2,8 @@
 
 In this level we are given a private ssh key and told to login to `bandit26`. We are also told that the shell for `bandit26` is not `/bin/bash`.
 
+We can ssh into bandit26 using `ssh bandit26@localhost -i bandit26.sshkey -p 2220`
+
 This shell prints ascii-art of the word `bandit26` and then exits.
 
 Using out shell on the user `bandit25` we can read the `/etc/passwd` file, which is where user's custom shells are stored.
@@ -26,4 +28,4 @@ Reading this script, we can tell that it displays some text using the `more` com
 We can have `more` copy the text into vim for us by pressing `v`. As we are now in vim we can open the password file.
 > `:edit /etc/bandit_pass/bandit26`
 
-This reveals the password: `5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z`
+This reveals the password: `c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1`

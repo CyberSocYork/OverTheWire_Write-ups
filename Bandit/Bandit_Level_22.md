@@ -24,4 +24,4 @@ cat /etc/bandit_pass/$myname > /tmp/$mytarget
 We can see that this script copies the password file to `/tmp` with a special filename. We can re-create this filename ourselves to find the file.
 > `cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)`
 
-Running this command reveals the password: `jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n`
+Running this command reveals the password: `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`

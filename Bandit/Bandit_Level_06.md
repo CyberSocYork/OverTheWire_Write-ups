@@ -16,4 +16,4 @@ After running this command we get the output:
 
 The only file that matches this is `/var/lib/dpkg/info/bandit7.password`.
 
-Opening this file reveals the password: `HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs`
+Opening this file reveals the password: `z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S`

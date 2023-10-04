@@ -10,6 +10,6 @@ We attempt to connect to `localhost` (the same PC that we're already on) with th
 > `ssh bandit14@localhost`
 
 When we run this we are asked for a password, which we do not have. To specify a key to use we use the flag `-i`.
-> `ssh -i sshkey.private bandit14@localhost`
+> `ssh -i sshkey.private bandit14@localhost -p 2220`
 
-This command works, and we are now logged in as bandit14. Opening `/etc/bandit_pass/bandit14` reveals the password: `4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e`
+This command works, and we are now logged in as bandit14. Opening `/etc/bandit_pass/bandit14` reveals the password: `fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq`
