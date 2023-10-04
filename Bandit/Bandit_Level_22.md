@@ -9,6 +9,7 @@ Running this script gives us the following debug message:
 ![2985e3a6.png](../src/2985e3a6.png)
 
 The shell script that it runs is as follows:
+
 ```sh
 #!/bin/bash
 
@@ -19,6 +20,7 @@ echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
 
 cat /etc/bandit_pass/$myname > /tmp/$mytarget
 ```
+
 We can see that this script copies the password file to `/tmp` with a special filename. We can re-create this filename ourselves to find the file.
 > `cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)`
 

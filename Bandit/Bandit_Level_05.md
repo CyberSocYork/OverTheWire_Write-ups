@@ -1,6 +1,7 @@
 # Bandit Level 5
 
 In this level the password for the next level is stored in a file somewhere in the inhere directory and has the following properties:
+
 * Human readable
 * 1033 bytes in size
 * Non executable

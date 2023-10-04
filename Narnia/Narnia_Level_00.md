@@ -3,6 +3,7 @@
 In this level we have a binary narnia0 that runs suid as narnia1 and the source code  
 
 THe source code is as follows:  
+
 ```c  
 #include <stdio.h>  
 #include <stdlib.h>  
@@ -30,11 +31,12 @@ int main(){
     return 0;  
 }  
 ```
+
 In this challenge we are told to change the value of the variable val to 0xdeadbeef  
 
 Here we can exploit scanf to input more data than necessary and commit a buffer overflow attack  
 
-The variable val is placed on the stack and we have our buffer buf is placed above it as Stacks grow from high memory addresses to low memory addresses.   
+The variable val is placed on the stack and we have our buffer buf is placed above it as Stacks grow from high memory addresses to low memory addresses.
 
 ![956e4133.png](../src/956e4133.png)  
 
@@ -75,7 +77,7 @@ This program prints 24 B's and then pipes the output of that command into our pr
 
 Now we know the buffer length and correct string we have to enter all we need to do is create the correct python command  
 
-In python when printing hex numbers you place \\x before them this makes our final command:   
+In python when printing hex numbers you place \\x before them this makes our final command:
 `python -c 'print "A"*20 + "\\xef\\xbe\\xad\\xde"' | ./narnia0`  
 
 After running this command the output is as follows:  
@@ -94,7 +96,7 @@ The final command becomes:
 After executing this command we are greeted with this:  
 ![a0d92eb3.png](../src/a0d92eb3.png)  
 
-It is just a text prompt so there is no username however this allows us to enter commands like so:   
+It is just a text prompt so there is no username however this allows us to enter commands like so:
 ![5cc9df88.png](../src/5cc9df88.png)  
 
 After some exploring we find the password is  `efeidiedae`  

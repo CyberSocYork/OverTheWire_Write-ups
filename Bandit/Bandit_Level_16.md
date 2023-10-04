@@ -26,4 +26,3 @@ Now that the file has the correct permissions, we can connect to the next level.
 > `ssh -i <filename> bandit17@localhost`
 
 Once we've connected, we can open `/etc/bandit_pass/bandit17`, revealing the password: `xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn`
-
