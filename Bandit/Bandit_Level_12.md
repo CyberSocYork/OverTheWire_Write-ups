@@ -1,4 +1,5 @@
 # Bandit Level 12
+
 In this we are first given a file that contains a hexdump.
 
 We need to convert the hexdump back to a binary file. This can be done using `xxd -r`. We can pipe this into `file -` to see what the data is.

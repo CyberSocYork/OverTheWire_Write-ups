@@ -9,6 +9,7 @@ As we start to run commands, we can see that the shell is not interpreting them 
 ![58e67432.png](../src/58e67432.png)
 
 Unlike Windows, Linux systems are case-sensitive. Due to the fact that most linux commands are lowercase, we can't run any commands. One of the few things that are uppercase are environment variables. These are used to communicate system information (such as the shell used or the location of binaries) to programs. Some common ones include:
+
 - `$SHELL`
 - `$PATH`
 - `$USER`
@@ -18,4 +19,3 @@ These expand to their contents, so if they point to a binary we are able to use 
 ![9a4e9098.png](../src/9a4e9098.png)
 
 There is one environment variable that is present on some (but not all) Linux systems that points to the system backup shell. Running `$0` as a command gives us a `/bin/sh` session. Using this shell we can open the password file `/etc/bandit_pass/bandit33`, revealing the password: `c9c3199ddf4121b10cf581a98d51caee`
-

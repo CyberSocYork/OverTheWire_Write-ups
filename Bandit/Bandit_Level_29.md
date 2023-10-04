@@ -10,6 +10,7 @@ This message implies that there is somewhere where passwords are allowed. We can
 The command git show-branch is used to show branches and with the `-a` argument can show all possible branches
 
 Running this command shows us that there are two other branches:
+
 - dev
 - sploits-dev
 

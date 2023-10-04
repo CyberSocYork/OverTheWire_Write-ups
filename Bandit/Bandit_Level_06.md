@@ -2,6 +2,7 @@
 
 For this level the challenge is to find the password file that is stored somewhere on the server
 The details we know about it are:
+
 * It is owned by user bandit7
 * It is owned by group bandit6
 * It is 33 bytes in size

@@ -1,4 +1,5 @@
 # Bandit Level 14
+
 In this level we are told to connect to the server `localhost` on port `30000`, and send it the current password.
 
 We can use netcat to achieve this. The command for netcat is `nc`, and it has the syntax `nc <address> <port>`.
